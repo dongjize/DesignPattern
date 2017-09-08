@@ -44,7 +44,7 @@ public class FootballPlayer implements Cloneable {
     }
 
     /**
-     * Call private constructors to clone Club. Clone Club and Performance before assigning other primitive fields.
+     * Call private constructors to clone Club. Clone Club and Performance before assigning country primitive fields.
      * Eventually, return an Object produced by deep copy.
      *
      * @return

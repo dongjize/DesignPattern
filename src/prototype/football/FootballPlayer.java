@@ -2,8 +2,8 @@ package prototype.football;
 
 import sun.misc.Perf;
 
-/*
- * Description: 
+/**
+ * Description:
  *
  * @Author: dong
  * @Date: 2017-09-04
@@ -16,8 +16,10 @@ public class FootballPlayer implements Cloneable {
     private Club club;
     private Performance performance;
 
-    public FootballPlayer(String name) {
+    public FootballPlayer(String name, int age, String nationality) {
         this.name = name;
+        this.age = age;
+        this.nationality = nationality;
         this.club = new Club();
         this.performance = new Performance();
     }
@@ -44,10 +46,10 @@ public class FootballPlayer implements Cloneable {
     }
 
     /**
-     * Call private constructors to clone Club. Clone Club and Performance before assigning country primitive fields.
-     * Eventually, return an Object produced by deep copy.
+     * Deep copy.
+     * Clone Club and Performance before assigning country primitive fields.
      *
-     * @return
+     * @return an Object produced by deep copy.
      * @throws CloneNotSupportedException
      */
     @Override

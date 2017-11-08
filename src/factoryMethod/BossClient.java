@@ -1,6 +1,6 @@
 package factoryMethod;
 
-/*
+/**
  * Description: 
  *
  * @Author: dong

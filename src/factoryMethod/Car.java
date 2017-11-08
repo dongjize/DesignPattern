@@ -1,6 +1,6 @@
 package factoryMethod;
 
-/*
+/**
  * Description: abstract product
  *
  * @Author: dong

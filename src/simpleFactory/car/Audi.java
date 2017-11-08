@@ -1,6 +1,6 @@
 package simpleFactory.car;
 
-/*
+/**
  * Description: 
  *
  * @Author: dong

@@ -1,6 +1,8 @@
 package flyweight.website;
 
+import java.util.HashMap;
 import java.util.Hashtable;
+import java.util.Map;
 
 /**
  * Description:
@@ -10,13 +12,13 @@ import java.util.Hashtable;
  * @Time: 23:12
  */
 public class WebsiteFactory {
-    private Hashtable flyweights = new Hashtable();
+    private Map<String, Website> flyweights = new HashMap<>();
 
     public Website getWebsiteCategory(String key) {
         if (!flyweights.containsKey(key)) {
             flyweights.put(key, new ConcreteWebsite(key));
         }
-        return (Website) flyweights.get(key);
+        return flyweights.get(key);
     }
 
     public int getWebsiteCount() {

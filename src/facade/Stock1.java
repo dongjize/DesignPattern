@@ -1,6 +1,6 @@
 package facade;
 
-/*
+/**
  * Description: 
  *
  * @Author: dong
